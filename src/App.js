@@ -1,13 +1,21 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { GlobalStyle } from './globalStyles';
 import Home from './pages/Home';
+import Menu from './pages/Menu';
 
 function App() {
   return (
     <Router>
       <GlobalStyle />
-      <Home />
+      <Switch>
+        <Route exact path='/'>
+          <Home />
+        </Route>
+        <Route path='/menu'>
+          <Menu />
+        </Route>
+      </Switch>
     </Router>
   );
 }

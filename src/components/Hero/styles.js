@@ -49,8 +49,9 @@ export const HeroBtn = styled.button`
     }
 `;
 
-export const HeroImage = styled.img`
-    width: 300px;
-    height: 100%;
-    border-radius: 200px;
+export const HeroBackground = styled.img`
+height:100vh;
+transform: translate(38px,-180px);
+
 `;
+

@@ -16,7 +16,7 @@ const Navbar = () => {
                 <LogoP>Ice Cream</LogoP>
                 <Nav>
                     <NavLink to='/'>Home</NavLink>
-                    <NavLink to='/'>Menu</NavLink>
+                    <NavLink to='/menu'>Menu</NavLink>
                     <NavLink to='/'>Contato</NavLink>
                     <NavLink to='/'>Sobre nós</NavLink>
                 </Nav>

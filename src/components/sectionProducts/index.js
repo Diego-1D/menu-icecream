@@ -59,10 +59,6 @@ const Products = ({ qtItems, heading, data }) => {
                         }
                     </ProductsWrapThree>
             }
-
-            <ProductBtnArea>
-                <ProductBtn>Ver mais sabores</ProductBtn>
-            </ProductBtnArea>
         </ProductsContent>
     )
 }

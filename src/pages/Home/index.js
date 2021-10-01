@@ -14,7 +14,10 @@ const Home = () => {
                     sections.map((section) => (
                         <section.theme>
                             <section.border />
-                            <SectionProducts qtItems={section.qtItemsGrid} heading={section.title} data={section.products} />
+                            <SectionProducts qtItems={section.qtItemsGrid} heading={section.category} data={section.products} />
+                            <section.btnArea>
+                                <section.btn>Ver mais sabores!</section.btn>
+                            </section.btnArea>
                         </section.theme>
                     ))
                 }

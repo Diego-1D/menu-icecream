@@ -62,26 +62,6 @@ export const ProductBtnArea = styled.div`
     justify-content: center;
 `;
 
-export const ProductBtn = styled.button`
-    font-size: 20px;
-    padding: 0.75rem 2rem;
-    border: none;
-    border-radius: 40px;
-    background-color: #FF819F;
-    color: #FFF5E9;
-    font-weight: bold;
-    transition: 0.3s ease-out;
-    margin: 3rem;
-
-    &:hover{
-        cursor: pointer;
-        background: #71CDFF;
-        color: #FFF;
-        transition: 0.3s ease-out;
-    }
-`;
-
-
 
 
 export const ProductsWrapThree = styled.div`
@@ -126,27 +106,3 @@ export const ProductTitleThree = styled.h3`
     color: #072030; 
 `;
 
-export const ProductBtnAreaThree = styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: center;
-`;
-
-export const ProductBtnThree = styled.button`
-    font-size: 20px;
-    padding: 0.75rem 2rem;
-    border: none;
-    border-radius: 40px;
-    background-color: #FF819F;
-    color: #FFF5E9;
-    font-weight: bold;
-    transition: 0.3s ease-out;
-    margin: 3rem;
-
-    &:hover{
-        cursor: pointer;
-        background: #71CDFF;
-        color: #FFF;
-        transition: 0.3s ease-out;
-    }
-`;

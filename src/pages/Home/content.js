@@ -8,6 +8,7 @@ import milk4 from '../../images/MilkShek/Imagem04.jpg';
 import pote1 from '../../images/Pote/Imagem01.png';
 import pote2 from '../../images/Pote/Imagem02.png';
 import pote3 from '../../images/Pote/Imagem03.png';
+import pote4 from '../../images/Pote/Imagem04.png';
 
 import sorvete1 from '../../images/Casquinha/Imagem01.jpg';
 import sorvete2 from '../../images/Casquinha/Imagem02.jpg';
@@ -24,15 +25,15 @@ import sundae3 from '../../images/Sundae/Imagem03.jpg';
 import sundae4 from '../../images/Sundae/Imagem04.jpg';
 
 const ContainerPink = styled.div`
-    height: 100vh;
+    height: 100%;
     background: ${props => props.theme.colors.backgroundPink};
 `;
 const ContainerBlue = styled.div`
-    height: 100vh;
+    height: 100%;
     background: ${props => props.theme.colors.backgroundBlue};
 `;
 const ContainerWhite = styled.div`
-    height: 100vh;
+    height: 100%;
     background: ${props => props.theme.colors.backgroundWhite};
 `;
 
@@ -98,7 +99,6 @@ const ProductBtn2 = styled.div`
     color: #FF819F;
     font-weight: bold;
     transition: 0.3s ease-out;
-
     &:hover{
         cursor: pointer;
         background: #71CDFF;
@@ -109,6 +109,7 @@ const ProductBtn2 = styled.div`
 
 export const sections = [
     {
+        key:1,
         theme: ContainerWhite,
         border: BorderPink,
         btn: ProductBtn,
@@ -120,15 +121,7 @@ export const sections = [
             alt: 'Milk Shek',
             name: 'Name 01',
             price: 'R$19.99',
-            
-           
-                ing1:'Maçã',
-                ing2:'Perâ',
-                ing3:'Uva',
-                ing4:'Leite',
-                ing5:'Cereja',
-                ing6:'Biscoito',
-    
+            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
         },
         {
             id: 2,
@@ -136,13 +129,7 @@ export const sections = [
             alt: 'Milk Shek',
             name: 'Name 02',
             price: 'R$19.99',
-             ing1:'Maçã',
-                ing2:'Perâ',
-                ing3:'Uva',
-                ing4:'Leite',
-                ing5:'Cereja',
-                ing6:'Biscoito',
-
+            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
         },
         {
             id: 3,
@@ -150,13 +137,7 @@ export const sections = [
             alt: 'Milk Shek',
             name: 'Name 03',
             price: 'R$19.99',
-             ing1:'Maçã',
-                ing2:'Perâ',
-                ing3:'Uva',
-                ing4:'Leite',
-                ing5:'Cereja',
-                ing6:'Biscoito',
-
+            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
         },
         {
             id: 4,
@@ -164,38 +145,27 @@ export const sections = [
             alt: 'Milk Shek',
             name: 'Name 04',
             price: 'R$19.99',
-             ing1:'Maçã',
-                ing2:'Perâ',
-                ing3:'Uva',
-                ing4:'Leite',
-                ing5:'Cereja',
-                ing6:'Biscoito',
-
+            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
         }
         ],
         allProductsUrl: '/',
         qtItemsGrid: 4,
-       
+
     },
     {
+        key:2,
         theme: ContainerBlue,
         border: BorderWhite,
         btn: ProductBtn1,
         btnArea: ProductBtnArea,
-        category: 'Sorvete de Pote',
+        category: 'Pote',
         products: [{
             id: 1,
             img: pote1,
             alt: 'Açaí com tapioca',
             name: 'Açaí com tapioca',
             price: 'R$19.99',
-             ing1:'Maçã',
-                ing2:'Perâ',
-                ing3:'Uva',
-                ing4:'Leite',
-                ing5:'Cereja',
-                ing6:'Biscoito',
-
+            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
         },
         {
             id: 2,
@@ -203,13 +173,7 @@ export const sections = [
             alt: 'Creme',
             name: 'Creme',
             price: 'R$19.99',
-             ing1:'Maçã',
-                ing2:'Perâ',
-                ing3:'Uva',
-                ing4:'Leite',
-                ing5:'Cereja',
-                ing6:'Biscoito',
-
+            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
         },
         {
             id: 3,
@@ -217,72 +181,66 @@ export const sections = [
             alt: 'Chocolate com flocos',
             name: 'Chocolate com flocos',
             price: 'R$19.99',
-             ing1:'Maçã',
-                ing2:'Perâ',
-                ing3:'Uva',
-                ing4:'Leite',
-                ing5:'Cereja',
-                ing6:'Biscoito',
-
+            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
+        },
+        {
+            id: 4,
+            img: pote4,
+            alt: 'Chocolate com flocos',
+            name: 'Chocolate com flocos',
+            price: 'R$19.99',
+            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
         }
         ],
         allProductsUrl: '/',
         qtItemsGrid: 3
     },
     {
+        key:3,
         theme: ContainerWhite,
         border: BorderBlue,
         btn: ProductBtn,
         btnArea: ProductBtnArea,
-        category: 'Sorvete de Casquinha',
+        category: 'Casquinha',
         products: [{
             id: 1,
             img: sorvete1,
             alt: 'Milk Shek',
             name: 'Name 01',
             price: 'R$19.99',
-             ing1:'Maçã',
-                ing2:'Perâ',
-                ing3:'Uva',
-                ing4:'Leite',
-                ing5:'Cereja',
-                ing6:'Biscoito',
-
+            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
         },
         {
             id: 2,
             img: sorvete2,
             alt: 'Morango com creme',
             name: 'Morango com creme',
-            price: 'R$9.99'
+            price: 'R$9.99',
+            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
         },
         {
             id: 3,
             img: sorvete3,
             alt: 'Morango',
             name: 'Morango',
-            price: 'R$9.99'
+            price: 'R$9.99',
+            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
         }
-        ,
+            ,
         {
             id: 4,
             img: sorvete4,
             alt: 'Milk Shek',
             name: 'Name 04',
             price: 'R$19.99',
-             ing1:'Maçã',
-                ing2:'Perâ',
-                ing3:'Uva',
-                ing4:'Leite',
-                ing5:'Cereja',
-                ing6:'Biscoito',
-
+            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
         }
         ],
         allProductsUrl: '/',
         qtItemsGrid: 4
     },
     {
+        key:4,
         theme: ContainerPink,
         border: BorderWhite,
         btn: ProductBtn2,
@@ -294,13 +252,7 @@ export const sections = [
             alt: 'Limão com hortelã',
             name: 'Limão com hortelã',
             price: 'R$19.99',
-             ing1:'Maçã',
-                ing2:'Perâ',
-                ing3:'Uva',
-                ing4:'Leite',
-                ing5:'Cereja',
-                
-
+            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
         },
         {
             id: 2,
@@ -308,12 +260,7 @@ export const sections = [
             alt: 'Chocolate com castanha',
             name: 'Chocolate com castanha',
             price: 'R$19.99',
-             ing1:'Maçã',
-                ing2:'Perâ',
-                ing3:'Uva',
-                ing4:'Leite',
-               
-
+            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
         },
         {
             id: 3,
@@ -321,9 +268,8 @@ export const sections = [
             alt: 'Melância',
             name: 'Melância',
             price: 'R$19.99',
-             ing1:'Maçã',
-                ing2:'Perâ',
-               
+            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
+
 
         }
         ],
@@ -331,6 +277,7 @@ export const sections = [
         qtItemsGrid: 3
     },
     {
+        key:5,
         theme: ContainerWhite,
         border: BorderPink,
         btn: ProductBtn,
@@ -343,13 +290,7 @@ export const sections = [
             alt: 'Brownie',
             name: 'Brownie',
             price: 'R$19.99',
-             ing1:'Maçã',
-                ing2:'Perâ',
-                ing3:'Uva',
-                ing4:'Leite',
-                ing5:'Cereja',
-                ing6:'Biscoito',
-
+            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
         },
         {
             id: 2,
@@ -358,13 +299,7 @@ export const sections = [
             alt: 'Milk Shek',
             name: 'Name 02',
             price: 'R$19.99',
-             ing1:'Maçã',
-                ing2:'Perâ',
-                ing3:'Uva',
-                ing4:'Leite',
-                ing5:'Cereja',
-                ing6:'Biscoito',
-
+            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
         },
         {
             id: 3,
@@ -373,13 +308,7 @@ export const sections = [
             alt: 'Cherry Bakewell',
             name: 'Cherry Bakewell',
             price: 'R$19.99',
-             ing1:'Maçã',
-                ing2:'Perâ',
-                ing3:'Uva',
-                ing4:'Leite',
-                ing5:'Cereja',
-                ing6:'Biscoito',
-
+            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
         },
         {
             id: 4,
@@ -388,13 +317,7 @@ export const sections = [
             alt: 'Raspberry',
             name: 'Raspberry',
             price: 'R$19.99',
-             ing1:'Maçã',
-                ing2:'Perâ',
-                ing3:'Uva',
-                ing4:'Leite',
-                ing5:'Cereja',
-                ing6:'Biscoito',
-
+            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
         }
         ],
         allProductsUrl: '/',

@@ -6,8 +6,6 @@ import {
     ProductImg,
     ProductInfo,
     ProductTitle,
-    ProductBtn,
-    ProductBtnArea,
     ProductsWrapFour,
     ProductsWrapThree,
     ProductCardThree,
@@ -43,7 +41,7 @@ const Products = ({ qtItems, heading, data }) => {
                     :
                     <ProductsWrapThree>
                         {
-                            data.map((product, index) => {
+                            data.slice(0,3).map((product, index) => {
                                 return (
                                     <ProductCardThree key={index}>
                                         <ProductInfoThree>

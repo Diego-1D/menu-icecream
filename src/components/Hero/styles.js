@@ -9,18 +9,24 @@ export const HeroContent = styled.div`
     height: calc(80vh - 80px);
     max-height: 100%;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:center;
 `;
 
 export const HeroItems = styled.div`
    display: flex;
    flex-direction: column;
-   justify-content: center;
    align-items: flex-start;
+   justify-content: center;
    height: 100vh;
    max-height: 100%;
    width: 650px;
    color: #FFF;
+
+   @media screen and (max-width: 800px){
+      width: 100%;
+      justify-content: center;
+
+    }
 `;
 
 export const HeroH1 = styled.h1`
@@ -29,6 +35,12 @@ export const HeroH1 = styled.h1`
     margin-bottom: 2.5rem;
     letter-spacing: 3px;
     font-family: 'Oleo Script Swash Caps', cursive;
+
+    @media screen and (max-width: 800px){
+        font-size:50px;
+        letter-spacing: 4px;
+        text-align: center;
+    }
 `;
 
 export const HeroBtn = styled.button`
@@ -49,9 +61,4 @@ export const HeroBtn = styled.button`
     }
 `;
 
-export const HeroBackground = styled.img`
-height:100vh;
-transform: translate(38px,-180px);
-
-`;
 

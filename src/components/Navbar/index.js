@@ -5,15 +5,17 @@ import {
     NavWrap,
     Logo,
     LogoP,
-    NavLink
+    NavLink,
+    NavIcon
 } from './styles';
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
         <NavContainer>
             <NavWrap>
                 <Logo />
                 <LogoP>Ice Cream</LogoP>
+                <NavIcon onClick={toggle}/>
                 <Nav>
                     <NavLink to='/'>Home</NavLink>
                     <NavLink to='/menu'>Menu</NavLink>

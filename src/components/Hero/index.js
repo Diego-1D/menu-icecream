@@ -1,27 +1,31 @@
-import React from "react";
+import React, {useState} from "react";
 import Navbar from "../Navbar";
-import Img from '../../images/hero-image.png';
-import Background from '../../images/fundo-blue.png';
+import Sidebar from "../Sidebar";
 import {
     HeroContainer,
     HeroContent,
     HeroItems,
     HeroH1,
     HeroBtn,
-    HeroBackground,
-    HeroImage
 } from './styles';
 
+
 const Hero = () => {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () =>{
+        setIsOpen(!isOpen)
+    }
     return (
         <HeroContainer>
-            <Navbar />
+            <Navbar toggle={toggle}/>
+            <Sidebar isOpen={isOpen} toggle={toggle}/>
             <HeroContent>
                 <HeroItems>
                     <HeroH1>Não é só sorvete, é uma porta da imaginação.</HeroH1>
                     <HeroBtn>Explorar menu</HeroBtn>
                 </HeroItems>
-                <HeroBackground src={Background}/>
             </HeroContent>
         </HeroContainer>
     )

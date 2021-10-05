@@ -1,27 +1,58 @@
 import styled from "styled-components";
 
 export const ProductsContent = styled.div`
-    padding: 0 5rem calc((100vw - 1300px) /2);
+     margin: 0 auto;
 `;
 
 export const ProductsHeading = styled.h1`
-    font-size: clamp(2rem, 2.5vw, 3rem);
+    font-size: 2rem;
     font-family: 'Oleo Script', cursive;
     color: #072030;
-    margin-bottom: 2.5rem;
+    margin: 2rem 2.5rem;
+
+    @media screen and (max-width: 600px){
+       text-align: center;
+       font-size: 2.5rem;
+    }
 `;
 
-export const ProductsWrapFour = styled.div`
+export const ProductsWrapFour = styled.section`
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 2rem auto;
     justify-content: center;
+    width: 88vw;
+    gap: 0 1rem ;
+
+    @media screen and (max-width: 1100px){
+     width: 95vw;
+    }
+
+    @media screen and (max-width: 800px){
+        grid-template-columns: repeat(2, 1fr);
+        width: 70vw;
+        gap: 2rem 4rem ;
+    }
+
+    @media screen and (max-width: 600px){
+        grid-template-columns: 1fr;
+    }
 `;
 
 export const ProductCard = styled.div`
     line-height: 2;
-    margin: 0 2rem;
+    margin: 0 auto;
+    width: 220px;
     border: 0.15rem solid pink;
     border-radius: 40px;
+
+    @media screen and (max-width:1100px){
+        width: 180px;
+    }
+
+    @media screen and (max-width: 800px){
+        width: 220px;
+    }
 `;
 
 export const ProductImg = styled.img`
@@ -29,6 +60,13 @@ export const ProductImg = styled.img`
     width: 100%;
     object-fit: cover;
     border-radius: 40px 40px 0 0 ;
+
+    @media screen and (max-width:1100px){
+        height: 240px;
+    }
+    @media screen and (max-width:800px){
+        height: 280px;
+    }
 `;
 
 export const ProductInfo = styled.div`
@@ -56,26 +94,46 @@ export const ProductPrice = styled.div`
     transform: translate(65px, -100px);
 `;
 
-export const ProductBtnArea = styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: center;
-`;
-
 
 
 export const ProductsWrapThree = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 4rem auto;
     justify-content: center;
-    margin-top: 5rem;
+    width: 88vw;
+    gap: 0 1rem ;
+
+    @media screen and (max-width: 1100px){
+     width: 95vw;
+    }
+
+    @media screen and (max-width: 900px){
+        width: 70vw;
+        gap: 0 2rem ;
+    }    
+    @media screen and (max-width: 800px){
+        grid-template-columns: 1fr;
+        gap: 6rem;
+    }
 `;
 
 export const ProductCardThree = styled.div`
-    margin: 0 3rem;
+    margin: 0 auto;
     width: 280px;
     border-radius: 40px;
     background-color: #FFF;
+    
+    @media screen and (max-width:1100px){
+     width: 250px;
+    }
+
+    @media screen and (max-width:900px){
+     width: 220px;
+    }
+    @media screen and (max-width: 800px){
+     width: 280px;
+    }
 `;
 
 export const ProductInfoThree = styled.div`
@@ -83,14 +141,18 @@ export const ProductInfoThree = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    transform: translate(0, -30px);   
 `;
 
 export const ProductInfoAreaThree = styled.div`
     display: flex;
     justify-content: space-between;
     width: 88%; 
-    margin-top: 15px;
+    transform: translate(0, -15px);
+
+    @media screen and (max-width:900px){
+        flex-direction: column;
+    }
+
 `;
 
 export const ProductImgThree = styled.img`
@@ -98,6 +160,19 @@ export const ProductImgThree = styled.img`
     width: 90%;
     object-fit: cover;
     border-radius: 40px 40px 0 0;
+    transform: translate(0, -30px);
+
+    @media screen and (max-width:1100px){
+        height: 230px;
+    }
+
+    @media screen and (max-width:900px){
+     height: 200px;
+    }
+
+    @media screen and (max-width: 800px){
+      height: 250px;
+    }
 `;
 
 

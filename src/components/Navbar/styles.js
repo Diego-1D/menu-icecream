@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import CreamBackground from '../../images/fundo-derretido-cream.png';
 import { FaIceCream } from 'react-icons/fa'
+import {FiAlignJustify} from "react-icons/fi";
 import {Link} from 'react-router-dom';
 
 export const NavContainer = styled.div`
@@ -24,18 +25,29 @@ export const Logo = styled(FaIceCream)`
     width: 50px;
     height: 50px;
     color: #58CCF3;
+    @media screen and (max-width: 800px){
+        display: none;
+    }
 `;
 
 export const LogoP = styled.p`
     font-family: 'Oleo Script', cursive;
     color: #58CCF3;
     font-size: 30px;
+    @media screen and (max-width: 800px){
+        display: none;
+    }
 `;
 
 export const Nav = styled.nav`
     flex: 1;
     position: relative;
     padding-left: 50px;
+    display: block;
+
+    @media screen and (max-width: 800px){
+        display: none;
+    }
 `;
 
 export const NavLink = styled(Link)`
@@ -44,4 +56,17 @@ export const NavLink = styled(Link)`
     color: #58CCF3;
     text-decoration: none;
     font-weight: 700;
+`;
+
+export const NavIcon = styled(FiAlignJustify)`
+    display: none;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    color:#000000;
+    font-size:2rem ;
+
+    @media screen and (max-width: 800px){
+        display: block;
+    }
 `;

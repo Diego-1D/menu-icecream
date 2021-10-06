@@ -16,7 +16,7 @@ const Home = () => {
                             <section.border />
                             <SectionProducts qtItems={section.qtItemsGrid} heading={section.category} data={section.products} />
                             <section.btnArea>
-                                <section.btn>Ver mais sabores!</section.btn>
+                                <section.btn to='/menu'>Ver mais sabores!</section.btn>
                             </section.btnArea>
                         </section.theme>
                     ))

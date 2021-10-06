@@ -10,6 +10,11 @@ const BtnContainer = styled.div`
     @media screen and (min-width: 800px){
         justify-content: center;
     }
+    @media screen and (max-width: 900px){
+        transform: translate(15px, -60px);
+        margin: 2.5rem 0;
+     
+    }
 `;
 
 const FilterButton = styled.button`

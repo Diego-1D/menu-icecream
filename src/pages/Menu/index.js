@@ -12,6 +12,7 @@ import {
     BackButtonIcon,
 } from './styles';
 import { Link } from 'react-router-dom';
+import Home from '../Home';
 
 const allCategories = ['Todos', ...new Set(items.map((item) => item.category))];
 

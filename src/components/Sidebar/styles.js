@@ -1,18 +1,21 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import {FaTimes} from 'react-icons/fa';
+import { FaTimes } from 'react-icons/fa';
 
 export const SidebarContainer = styled.aside`
     position: fixed;
-    z-index: 999;
-    width: 350px;
+    width: 100%;
     height: 100%;
     background: #71CDFF;
     display: grid;
     align-items: center;
     margin-top:-180px;
     transition: 0.3s ease-in-out;
-    right: ${({isOpen}) => (isOpen ? '0' : '-1000px')};
+    right: -100%;
+
+    @media screen and (max-width: 800px){
+        right: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+    }
 `;
 
 

@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import img from '../../images/fundo-derretido-pink2.png';
-import { BsFillArrowUpSquareFill } from "react-icons/bs";
+import { BsArrowLeft } from "react-icons/bs";
+
 
 export const MenuContainer = styled.main`
     height: 100%;
@@ -13,11 +14,11 @@ export const BorderPink = styled.div`
     background: url(${img});
 
     @media screen and (max-width: 900px){
-        transform: translate(0,-75px);
+        transform: translate(0,-65px);
     }
 
     @media screen and (max-width: 650px){
-        transform: translate(0,-100px);
+        transform: translate(0,-80px);
     }
 
    
@@ -45,27 +46,28 @@ export const H2 = styled.h1`
 `;
 
 export const BackButton = styled(Link)`
-    background-color: #71CDFF;
-    color:#000000;
-    padding: 0.75rem 0.75rem;
+    font-size: 15px;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 40px;
+    background: #FFF5E9;
+    color: #FF819F;
+    transition: 0.3s ease-out;
+    justify-content: center;
     transform: translate(25px, 25px);
     position: absolute;
-    border: none;
-    border-radius: 0.75rem;
-    font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
-    transition: 0.3s linear;
     text-decoration: none;
     display: block;
 
     &:hover{
-        background-color: #FFF;
-        color:#71CDFF;
+        background: #71CDFF;
+        color: #FFF5E9;
+        transition: 0.3s ease-out;
     }
-
     @media screen and (max-width: 900px){
-        transform: translate(15px,90px);
+        transform: translate(15px,80px);
      
     }
 
@@ -76,13 +78,11 @@ export const BackButton = styled(Link)`
 
 `;
 
-export const BackButtonIcon = styled.img`
-    background:url("https://img.icons8.com/ios-filled/50/000000/left.png");
-    background-repeat: no-repeat;
-    background-color: #71CDFF;
-    color:pink;
-    width: 50px;
-    height: 50px;
+export const BackButtonIcon = styled(BsArrowLeft)`
+     background: #FFF5E9;
+    color: #FF819F;
+    width: 40px;
+    height: 40px;
     position: absolute;
     border: none;
     border-radius: 2rem;
@@ -98,7 +98,7 @@ export const BackButtonIcon = styled.img`
 
 
     @media screen and (max-width: 650px){
-        transform: translate(15px,110px);
+        transform: translate(15px, 95px);
         display: block;
     }
 

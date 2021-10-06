@@ -18,6 +18,7 @@ import {
 } from './styles';
 
 const Products = ({ qtItems, heading, data }) => {
+
     return (
         <ProductsContent>
             <ProductsHeading>{heading}</ProductsHeading>

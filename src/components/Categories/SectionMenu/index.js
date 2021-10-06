@@ -17,7 +17,7 @@ const SectionMenu = ({ items }) => {
                     const { products } = menuItem;
                     return (
                         products.map((productsItem) => {
-                            const { id, name, img, alt, price, description } = productsItem;
+                            const { id , name, img, alt, price, description } = productsItem;
                             return (
                                 <MenuItem key={id}>
                                     <Photo src={img} alt={alt} />

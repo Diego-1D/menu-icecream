@@ -19,7 +19,7 @@ export const ProductsHeading = styled.h1`
 export const ProductsWrapFour = styled.section`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 2rem auto;
+    margin: 4rem auto;
     justify-content: center;
     width: 88vw;
     gap: 0 1rem ;

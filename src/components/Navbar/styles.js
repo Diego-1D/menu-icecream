@@ -12,7 +12,7 @@ export const NavContainer = styled.div`
 `;
 
 export const NavWrap = styled.div`
-    width: 80%;
+    width: 90%;
     height: 50%;
     display: flex;
     position: relative;
@@ -21,22 +21,25 @@ export const NavWrap = styled.div`
 
 `;
 
+export const LogoArea = styled.div`
+  display: flex;
+
+  @media screen and (max-width: 800px){
+        display: none;
+    }
+`;
+
 export const Logo = styled(FaIceCream)`
     width: 50px;
     height: 50px;
     color: #58CCF3;
-    @media screen and (max-width: 800px){
-        display: none;
-    }
 `;
 
 export const LogoP = styled.p`
     font-family: 'Oleo Script', cursive;
     color: #58CCF3;
     font-size: 30px;
-    @media screen and (max-width: 800px){
-        display: none;
-    }
+   
 `;
 
 export const Nav = styled.nav`

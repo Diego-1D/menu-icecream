@@ -23,6 +23,7 @@ import sundae1 from '../../images/Sundae/Imagem01.jpg';
 import sundae2 from '../../images/Sundae/Imagem02.jpg';
 import sundae3 from '../../images/Sundae/Imagem03.jpg';
 import sundae4 from '../../images/Sundae/Imagem04.jpg';
+import { Link } from 'react-router-dom';
 
 const ContainerPink = styled.div`
     height: 100%;
@@ -54,7 +55,7 @@ const ProductBtnArea = styled.div`
     display: flex;
     justify-content: center;
 `;
-const ProductBtn = styled.div`
+const ProductBtn = styled(Link)`
     font-size: 20px;
     padding: 0.75rem 2rem;
     border: none;
@@ -63,6 +64,7 @@ const ProductBtn = styled.div`
     color: #FFFFFF;
     font-weight: bold;
     transition: 0.3s ease-out;
+    text-decoration: none;
 
     &:hover{
         cursor: pointer;
@@ -72,7 +74,7 @@ const ProductBtn = styled.div`
     }
 `;
 
-const ProductBtn1 = styled.div`
+const ProductBtn1 = styled(Link)`
     font-size: 20px;
     padding: 0.75rem 2rem;
     border: none;
@@ -81,6 +83,7 @@ const ProductBtn1 = styled.div`
     color: #71CDFF;
     font-weight: bold;
     transition: 0.3s ease-out;
+    text-decoration: none;
 
     &:hover{
         cursor: pointer;
@@ -90,7 +93,7 @@ const ProductBtn1 = styled.div`
     }
 `;
 
-const ProductBtn2 = styled.div`
+const ProductBtn2 = styled(Link)`
     font-size: 20px;
     padding: 0.75rem 2rem;
     border: none;
@@ -99,6 +102,8 @@ const ProductBtn2 = styled.div`
     color: #FF819F;
     font-weight: bold;
     transition: 0.3s ease-out;
+    text-decoration: none;
+
     &:hover{
         cursor: pointer;
         background: #71CDFF;

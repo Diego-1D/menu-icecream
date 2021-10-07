@@ -6,7 +6,7 @@ import Menu from './pages/Menu';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <GlobalStyle />
       <Switch>
         <Route exact path='/'>

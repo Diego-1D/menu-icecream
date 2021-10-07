@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/menu-icecream/static/js/main.12f6bd19.chunk.js",
-    "main.js.map": "/menu-icecream/static/js/main.12f6bd19.chunk.js.map",
+    "main.js": "/menu-icecream/static/js/main.db80cea9.chunk.js",
+    "main.js.map": "/menu-icecream/static/js/main.db80cea9.chunk.js.map",
     "runtime-main.js": "/menu-icecream/static/js/runtime-main.e662f09a.js",
     "runtime-main.js.map": "/menu-icecream/static/js/runtime-main.e662f09a.js.map",
     "static/js/2.d5eba41e.chunk.js": "/menu-icecream/static/js/2.d5eba41e.chunk.js",
@@ -36,6 +36,6 @@
   "entrypoints": [
     "static/js/runtime-main.e662f09a.js",
     "static/js/2.d5eba41e.chunk.js",
-    "static/js/main.12f6bd19.chunk.js"
+    "static/js/main.db80cea9.chunk.js"
   ]
 }

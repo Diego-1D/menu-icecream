@@ -4,43 +4,62 @@ import { Link } from "react-router-dom";
 export const HeroContainer = styled.div`
     background: #FF819F;
     height: 100%;
+
+    @media screen and (max-width: 768px){
+       height: auto;
+    }
 `;
 
 export const HeroContent = styled.div`
-    height: 60vh;
-    display: flex;
+    width: 100%;
+    padding: 0 4rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+
+    @media screen and (max-width: 1100px){
+        grid-template-columns: 1fr;
+    }
+
+    @media screen and (max-width: 590px){
+        padding: 0 2rem;
+    }
 `;
 
 export const HeroItems = styled.div`
-   margin: 0 5rem;
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-end;
-   align-items: flex-start;
-   width: 650px;
-   color: #FFF;
-
-   @media screen and (max-width: 600px){
-        margin: 0 3rem;
-    }
-
-    @media screen and (max-width: 450px){
-        justify-content: center;
-        margin: 0 1.5rem;
-    }
+    color: #F8F8F8;
 `;
 
 export const HeroH1 = styled.h1`
-    font-size: 60px;
+    font-size: 4rem;
     font-weight: 400;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-family: 'Oleo Script Swash Caps', cursive;
-    
-    @media screen and (max-width: 600px){
-        font-size: 50px;
+    padding: 3rem 0;
+ 
+    @media screen and (max-width: 700px){
+        font-size: 3rem;
     }
-    @media screen and (max-width: 450px){
-        font-size: 45px;
+
+    @media screen and (max-width: 475px){
+        font-size: 2.3rem;
+    }
+
+`;
+
+export const AreaImage = styled.article`
+    display: block;
+
+    @media screen and (max-width:1100px){
+        display: none;
+    }
+`;
+
+export const HeroImage = styled.img`
+    width: 33rem;
+
+    @media screen and (max-width: 1200px){
+       width: 30rem;
     }
 `;
 
@@ -64,5 +83,3 @@ export const HeroBtn = styled(Link)`
         transition: 0.3s ease-out;
     }
 `;
-
-

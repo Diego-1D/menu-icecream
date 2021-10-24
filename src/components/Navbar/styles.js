@@ -23,10 +23,7 @@ export const NavWrap = styled.div`
 
 export const LogoArea = styled.div`
   display: flex;
-
-  @media screen and (max-width: 800px){
-        display: none;
-    }
+  margin-right: 4rem;
 `;
 
 export const Logo = styled(FaIceCream)`
@@ -45,7 +42,6 @@ export const LogoP = styled.p`
 export const Nav = styled.nav`
     flex: 1;
     position: relative;
-    padding-left: 50px;
     display: block;
 
     @media screen and (max-width: 800px){
@@ -66,7 +62,7 @@ export const NavIcon = styled(FiAlignJustify)`
     position: absolute;
     right: 0;
     cursor: pointer;
-    color:#000000;
+    color: #58CCF3;
     font-size:2rem ;
 
     @media screen and (max-width: 800px){

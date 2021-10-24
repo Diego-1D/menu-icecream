@@ -2,23 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 
 const BtnContainer = styled.div`
-    margin: 5rem 0;
     display: flex;
-    width: 100%;
     overflow-x: auto;
 
     @media screen and (min-width: 800px){
         justify-content: center;
     }
-    @media screen and (max-width: 900px){
-        transform: translate(15px, -60px);
-        margin: 2.5rem 0;
-     
-    }
 `;
 
 const FilterButton = styled.button`
-    background: transparent;
+    background-color: ${props => props.active ? "#71cdff" : "transparent"};
     border-color: transparent;
     font-size: 1.5rem;
     font-weight: 700;
@@ -30,17 +23,11 @@ const FilterButton = styled.button`
     border-radius: 0.75rem;
     font-family: 'Oleo Script', cursive;
     color: #072030;
-    border: 2px solid  #71CDFF;
-
-    &:active{
-        transition: all 0.3s linear;
-        background: #71CDFF;
-        color: #FFF; 
-        border-color: none;
-        }  
+    border: 2px solid #71CDFF;  
+    outline: none;
 `;
 
-const Categories = ({ categories, filterItems }) => {
+const Categories = ({ categories, filterItems, selected }) => {
 
 
     return (
@@ -49,10 +36,10 @@ const Categories = ({ categories, filterItems }) => {
                 categories.map((category, index) => {
                     return (
                         <FilterButton
+                            active={selected == category}
                             key={index}
                             onClick={() => filterItems(category)}
                         >
-                        
                             {category}
                         </FilterButton>
                     )

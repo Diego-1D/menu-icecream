@@ -24,7 +24,7 @@ const Products = ({ qtItems, heading, data }) => {
             <ProductsHeading>{heading}</ProductsHeading>
             {
                 qtItems === 4 ?
-                    <ProductsWrapFour>
+                <ProductsWrapFour>
                         {
                             data.map((product, index) => {
                                 return (

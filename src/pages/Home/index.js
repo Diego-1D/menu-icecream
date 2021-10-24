@@ -3,6 +3,7 @@ import Hero from "../../components/Hero";
 import SectionProducts from "../../components/sectionProducts";
 import Theme from "./styles";
 import { sections } from "./content";
+import Footer from "../../components/Footer";
 
 
 const Home = () => {
@@ -16,12 +17,13 @@ const Home = () => {
                             <section.border />
                             <SectionProducts qtItems={section.qtItemsGrid} heading={section.category} data={section.products} />
                             <section.btnArea>
-                                <section.btn to='/menu'>Ver mais sabores!</section.btn>
+                                <section.btn to={`/menu?category=${section.category}`}>Ver mais sabores!</section.btn>
                             </section.btnArea>
                         </section.theme>
                     ))
                 }
             </Theme>
+            <Footer/>
         </>
     )
 }

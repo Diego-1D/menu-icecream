@@ -3,12 +3,12 @@ import styled from 'styled-components';
 import milk1 from '../../images/MilkShek/Imagem01.jpg';
 import milk2 from '../../images/MilkShek/Imagem02.jpg';
 import milk3 from '../../images/MilkShek/Imagem03.jpg';
-import milk4 from '../../images/MilkShek/Imagem04.jpg';
+import milk4 from '../../images/MilkShek/Imagem05.jpg';
 
-import pote1 from '../../images/Pote/Imagem01.png';
-import pote2 from '../../images/Pote/Imagem02.png';
-import pote3 from '../../images/Pote/Imagem03.png';
-import pote4 from '../../images/Pote/Imagem04.png';
+import bananasplit01 from '../../images/BananaSplit/Imagem01.jpg';
+import bananasplit02 from '../../images/BananaSplit/Imagem02.jpg';
+import bananasplit03 from '../../images/BananaSplit/Imagem03.jpg';
+import bananasplit04 from '../../images/BananaSplit/Imagem04.jpg';
 
 import sorvete1 from '../../images/Casquinha/Imagem01.jpg';
 import sorvete2 from '../../images/Casquinha/Imagem02.jpg';
@@ -34,7 +34,7 @@ const ContainerBlue = styled.div`
     background: ${props => props.theme.colors.backgroundBlue};
 `;
 const ContainerWhite = styled.div`
-    height: 100%;
+   height: 100%;
     background: ${props => props.theme.colors.backgroundWhite};
 `;
 
@@ -43,7 +43,8 @@ const BorderBlue = styled.div`
     background: ${props => props.theme.border.backgroundBorderBlue};
 `;
 const BorderPink = styled.div`
-    height: 180px;
+    background-repeat:no-repeat;
+     height: 180px;
     background: ${props => props.theme.border.backgroundBorderPink};
 `;
 const BorderWhite = styled.div`
@@ -55,6 +56,7 @@ const ProductBtnArea = styled.div`
     display: flex;
     justify-content: center;
 `;
+
 const ProductBtn = styled(Link)`
     font-size: 20px;
     padding: 0.75rem 2rem;
@@ -163,10 +165,10 @@ export const sections = [
         border: BorderWhite,
         btn: ProductBtn1,
         btnArea: ProductBtnArea,
-        category: 'Pote',
+        category: 'Banana Split',
         products: [{
             id: 1,
-            img: pote1,
+            img: bananasplit01,
             alt: 'Açaí com tapioca',
             name: 'Açaí com tapioca',
             price: 'R$19.99',
@@ -174,7 +176,7 @@ export const sections = [
         },
         {
             id: 2,
-            img: pote2,
+            img: bananasplit02,
             alt: 'Creme',
             name: 'Creme',
             price: 'R$19.99',
@@ -182,7 +184,7 @@ export const sections = [
         },
         {
             id: 3,
-            img: pote3,
+            img: bananasplit03,
             alt: 'Chocolate com flocos',
             name: 'Chocolate com flocos',
             price: 'R$19.99',
@@ -190,7 +192,7 @@ export const sections = [
         },
         {
             id: 4,
-            img: pote4,
+            img: bananasplit04,
             alt: 'Chocolate com flocos',
             name: 'Chocolate com flocos',
             price: 'R$19.99',

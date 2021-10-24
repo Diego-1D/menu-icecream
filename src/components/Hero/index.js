@@ -7,9 +7,11 @@ import {
     HeroItems,
     HeroH1,
     HeroBtn,
+    HeroImage,
+    AreaImage
 } from './styles';
 
-
+import HeroImg from '../../images/HeroImage.png';
 const Hero = () => {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -26,6 +28,9 @@ const Hero = () => {
                     <HeroH1>Não é só sorvete, é uma porta da imaginação.</HeroH1>
                     <HeroBtn to='/menu'>Explorar menu</HeroBtn>
                 </HeroItems>
+                <AreaImage>
+                    <HeroImage src={HeroImg}/>
+                </AreaImage>
             </HeroContent>
         </HeroContainer>
     )

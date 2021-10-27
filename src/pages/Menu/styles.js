@@ -82,5 +82,5 @@ export const BackButtonIcon = styled(BsArrowLeft)`
 
 export const CategoriesArea = styled.div`
     width: 100%;
-    margin: 5rem 0;
+    margin: 3rem 0;
 `;

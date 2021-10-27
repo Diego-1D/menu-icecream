@@ -8,6 +8,9 @@ const BtnContainer = styled.div`
     @media screen and (min-width: 800px){
         justify-content: center;
     }
+    &::-webkit-scrollbar {
+    display: none;
+}
 `;
 
 const FilterButton = styled.button`

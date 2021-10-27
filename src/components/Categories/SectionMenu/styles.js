@@ -3,12 +3,14 @@ import styled from "styled-components";
 export const SectionContainer = styled.div`
     width: 80%;
     margin: 0 auto;
+    padding: 4rem 0;
     display: grid;
     grid-template-columns:repeat(2, 1fr);
     gap: 3rem 5rem;
 
     @media screen and (max-width: 1000px) {
-       width: 90%;
+       width: 95%;
+       gap: 3rem 2.5rem;
     }
     @media screen and (max-width: 750px) {
         width: 70%;
@@ -43,12 +45,12 @@ export const Photo = styled.img`
 export const ItemInfo = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 1rem 1.5rem;
+    padding: 1rem;
     font-family: 'Oleo Script', cursive;
     color: #072030;
 
     @media screen and (max-width: 1000px) {
-        padding: 1rem;
+        padding: 0.7rem;
     }
 `;
 
@@ -61,12 +63,19 @@ export const H1 = styled.h3`
     @media screen and (max-width: 1000px) {
        font-size: 1.3rem;
     }
+    @media screen and (max-width: 380px) {
+       font-size: 1rem;
+    }
 `;
 
 export const Price = styled.h4`
     font-family: 'Oleo Script', cursive;
     color: #072030;
     font-size: 0.9rem;
+
+    @media screen and (max-width: 380px) {
+       font-size: 0.7rem;
+    }
 `;
 
 export const Description = styled.h4`
@@ -75,4 +84,8 @@ export const Description = styled.h4`
     font-size: 1rem;
     text-align: justify;
     margin: 0.8rem 0;
+    
+    @media screen and (max-width: 380px) {
+       font-size: 0.8rem;
+    }
 `;

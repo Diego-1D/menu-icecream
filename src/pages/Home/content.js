@@ -26,16 +26,13 @@ import sundae4 from '../../images/Sundae/Imagem04.jpg';
 import { Link } from 'react-router-dom';
 
 const ContainerPink = styled.div`
-    height: 100%;
-    background: ${props => props.theme.colors.backgroundPink};
+    background: ${props => props.theme.backgroundColors.backgroundPink};
 `;
 const ContainerBlue = styled.div`
-    height: 100%;
-    background: ${props => props.theme.colors.backgroundBlue};
+    background: ${props => props.theme.backgroundColors.backgroundBlue};
 `;
 const ContainerWhite = styled.div`
-   height: 100%;
-    background: ${props => props.theme.colors.backgroundWhite};
+    background: ${props => props.theme.backgroundColors.backgroundWhite};
 `;
 
 const BorderBlue = styled.div`
@@ -43,8 +40,7 @@ const BorderBlue = styled.div`
     background: ${props => props.theme.border.backgroundBorderBlue};
 `;
 const BorderPink = styled.div`
-    background-repeat:no-repeat;
-     height: 180px;
+    height: 180px;
     background: ${props => props.theme.border.backgroundBorderPink};
 `;
 const BorderWhite = styled.div`
@@ -57,59 +53,77 @@ const ProductBtnArea = styled.div`
     justify-content: center;
 `;
 
-const ProductBtn = styled(Link)`
-    font-size: 20px;
-    padding: 0.75rem 2rem;
+/*
+Button00:{
+    background-color: Pink,
+    color: White
+}
+ */
+const Button00 = styled(Link)`
+    font-size: ${props => props.theme.fontSize.small};
+    padding: ${props => props.theme.paddingSize.padding};
     border: none;
-    border-radius: 40px;
-    background-color:#FF819F;
-    color: #FFFFFF;
+    border-radius: ${props => props.theme.borderRadius.radius};
+    background-color: ${props => props.theme.colors.pink};
+    color: ${props => props.theme.colors.white};
     font-weight: bold;
     transition: 0.3s ease-out;
     text-decoration: none;
 
     &:hover{
         cursor: pointer;
-        background: #71CDFF;
-        color: #FFF;
+        background:  ${props => props.theme.colors.blue};
+        color: ${props => props.theme.colors.white};
         transition: 0.3s ease-out;
     }
 `;
 
-const ProductBtn1 = styled(Link)`
-    font-size: 20px;
-    padding: 0.75rem 2rem;
+/*
+Button01:{
+    background-color: White,
+    color: Blue
+}
+ */
+const Button01 = styled(Link)`
+    font-size: ${props => props.theme.fontSize.small};
+    padding: ${props => props.theme.paddingSize.padding};
     border: none;
-    border-radius: 40px;
-    background-color:#FFFFFF ;
-    color: #71CDFF;
+    border-radius: ${props => props.theme.borderRadius.radius};
+    background-color: ${props => props.theme.colors.white};
+    color:  ${props => props.theme.colors.blue};
     font-weight: bold;
     transition: 0.3s ease-out;
     text-decoration: none;
 
     &:hover{
         cursor: pointer;
-        background: #FF819F;
-        color: #FFF;
+        background: ${props => props.theme.colors.pink};
+        color: ${props => props.theme.colors.white};
         transition: 0.3s ease-out;
     }
 `;
 
-const ProductBtn2 = styled(Link)`
-    font-size: 20px;
-    padding: 0.75rem 2rem;
+/*
+Button02:{
+    background-color: White,
+    color: Pink
+}
+ */
+const Button02 = styled(Link)`
+    font-size: ${props => props.theme.fontSize.small};
+    padding: ${props => props.theme.paddingSize.padding};
     border: none;
-    border-radius: 40px;
-    background-color:#FFFFFF ;
-    color: #FF819F;
+    border-radius: ${props => props.theme.borderRadius.radius};
+    background-color:  ${props => props.theme.colors.white};
+    color:  ${props => props.theme.colors.pink};
     font-weight: bold;
     transition: 0.3s ease-out;
     text-decoration: none;
 
     &:hover{
         cursor: pointer;
-        background: #71CDFF;
-        color: #FFF;
+        background:  ${props => props.theme.colors.blue};
+        color: ${props => props.theme.colors.white};
         transition: 0.3s ease-out;
     }
 `;
@@ -119,40 +133,40 @@ export const sections = [
         key:1,
         theme: ContainerWhite,
         border: BorderPink,
-        btn: ProductBtn,
+        btn: Button00,
         btnArea: ProductBtnArea,
         category: 'Milk Shake',
         products: [{
             id: 1,
             img: milk1,
             alt: 'Milk Shek',
-            name: 'Name 01',
-            price: 'R$19.99',
-            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
+            name: 'Milk Shek 01',
+            price: 'R$ 9.99',
+            description: ' Um sorvete é sempre bem-vindo para colorir e refrescar a vida. Um dia sem sorvete é um dia perdido!'
         },
         {
             id: 2,
             img: milk2,
             alt: 'Milk Shek',
-            name: 'Name 02',
-            price: 'R$19.99',
-            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
+            name: 'Milk Shek 02',
+            price: 'R$ 9.99',
+            description: ' Um sorvete é sempre bem-vindo para colorir e refrescar a vida. Um dia sem sorvete é um dia perdido!'
         },
         {
             id: 3,
             img: milk3,
             alt: 'Milk Shek',
-            name: 'Name 03',
-            price: 'R$19.99',
-            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
+            name: 'Milk Shek 03',
+            price: 'R$ 9.99',
+            description: ' Um sorvete é sempre bem-vindo para colorir e refrescar a vida. Um dia sem sorvete é um dia perdido!'
         },
         {
             id: 4,
             img: milk4,
             alt: 'Milk Shek',
-            name: 'Name 04',
-            price: 'R$19.99',
-            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
+            name: 'Milk Shek 04',
+            price: 'R$ 9.99',
+            description: ' Um sorvete é sempre bem-vindo para colorir e refrescar a vida. Um dia sem sorvete é um dia perdido!'
         }
         ],
         allProductsUrl: '/',
@@ -163,40 +177,40 @@ export const sections = [
         key:2,
         theme: ContainerBlue,
         border: BorderWhite,
-        btn: ProductBtn1,
+        btn: Button01,
         btnArea: ProductBtnArea,
         category: 'Banana Split',
         products: [{
             id: 1,
             img: bananasplit01,
-            alt: 'Açaí com tapioca',
-            name: 'Açaí com tapioca',
-            price: 'R$19.99',
-            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
+            alt: 'Banana Split 01',
+            name: 'Banana Split 01',
+            price: 'R$ 9.99',
+            description: ' Um sorvete é sempre bem-vindo para colorir e refrescar a vida. Um dia sem sorvete é um dia perdido!'
         },
         {
             id: 2,
             img: bananasplit02,
-            alt: 'Creme',
-            name: 'Creme',
-            price: 'R$19.99',
-            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
+            alt: 'Banana Split 02',
+            name: 'Banana Split 02',
+            price: 'R$ 9.99',
+            description: ' Um sorvete é sempre bem-vindo para colorir e refrescar a vida. Um dia sem sorvete é um dia perdido!'
         },
         {
             id: 3,
             img: bananasplit03,
-            alt: 'Chocolate com flocos',
-            name: 'Chocolate com flocos',
-            price: 'R$19.99',
-            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
+            alt: 'Banana Split 03',
+            name: 'Banana Split 03',
+            price: 'R$ 9.99',
+            description: ' Um sorvete é sempre bem-vindo para colorir e refrescar a vida. Um dia sem sorvete é um dia perdido!'
         },
         {
             id: 4,
             img: bananasplit04,
-            alt: 'Chocolate com flocos',
-            name: 'Chocolate com flocos',
-            price: 'R$19.99',
-            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
+            alt: 'Banana Split 04',
+            name: 'Banana Split 04',
+            price: 'R$ 9.99',
+            description: ' Um sorvete é sempre bem-vindo para colorir e refrescar a vida. Um dia sem sorvete é um dia perdido!'
         }
         ],
         allProductsUrl: '/',
@@ -206,41 +220,41 @@ export const sections = [
         key:3,
         theme: ContainerWhite,
         border: BorderBlue,
-        btn: ProductBtn,
+        btn: Button00,
         btnArea: ProductBtnArea,
         category: 'Casquinha',
         products: [{
             id: 1,
             img: sorvete1,
-            alt: 'Milk Shek',
-            name: 'Name 01',
-            price: 'R$19.99',
-            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
+            alt: 'Casquinha 01',
+            name: 'Casquinha 01',
+            price: 'R$ 9.99',
+            description: ' Um sorvete é sempre bem-vindo para colorir e refrescar a vida. Um dia sem sorvete é um dia perdido!'
         },
         {
             id: 2,
             img: sorvete2,
-            alt: 'Morango com creme',
-            name: 'Morango com creme',
+            alt: 'Casquinha 02',
+            name: 'Casquinha 02',
             price: 'R$9.99',
-            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
+            description: ' Um sorvete é sempre bem-vindo para colorir e refrescar a vida. Um dia sem sorvete é um dia perdido!'
         },
         {
             id: 3,
             img: sorvete3,
-            alt: 'Morango',
-            name: 'Morango',
+            alt: 'Casquinha 03',
+            name: 'Casquinha 03',
             price: 'R$9.99',
-            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
+            description: ' Um sorvete é sempre bem-vindo para colorir e refrescar a vida. Um dia sem sorvete é um dia perdido!'
         }
             ,
         {
             id: 4,
             img: sorvete4,
-            alt: 'Milk Shek',
-            name: 'Name 04',
-            price: 'R$19.99',
-            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
+            alt: 'Casquinha 04',
+            name: 'Casquinha 04',
+            price: 'R$ 9.99',
+            description: ' Um sorvete é sempre bem-vindo para colorir e refrescar a vida. Um dia sem sorvete é um dia perdido!'
         }
         ],
         allProductsUrl: '/',
@@ -250,32 +264,32 @@ export const sections = [
         key:4,
         theme: ContainerPink,
         border: BorderWhite,
-        btn: ProductBtn2,
+        btn: Button02,
         btnArea: ProductBtnArea,
         category: 'Picolé',
         products: [{
             id: 1,
             img: picole1,
-            alt: 'Limão com hortelã',
-            name: 'Limão com hortelã',
-            price: 'R$19.99',
-            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
+            alt: 'Picolé 01',
+            name: 'Picolé 01',
+            price: 'R$ 9.99',
+            description: ' Um sorvete é sempre bem-vindo para colorir e refrescar a vida. Um dia sem sorvete é um dia perdido!'
         },
         {
             id: 2,
             img: picole2,
-            alt: 'Chocolate com castanha',
-            name: 'Chocolate com castanha',
-            price: 'R$19.99',
-            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
+            alt: 'Picolé 02',
+            name: 'Picolé 02',
+            price: 'R$ 9.99',
+            description: ' Um sorvete é sempre bem-vindo para colorir e refrescar a vida. Um dia sem sorvete é um dia perdido!'
         },
         {
             id: 3,
             img: picole3,
-            alt: 'Melância',
-            name: 'Melância',
-            price: 'R$19.99',
-            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
+            alt: 'Picolé 03',
+            name: 'Picolé 03',
+            price: 'R$ 9.99',
+            description: ' Um sorvete é sempre bem-vindo para colorir e refrescar a vida. Um dia sem sorvete é um dia perdido!'
 
 
         }
@@ -287,44 +301,40 @@ export const sections = [
         key:5,
         theme: ContainerWhite,
         border: BorderPink,
-        btn: ProductBtn,
+        btn: Button00,
         btnArea: ProductBtnArea,
         category: 'Sundae',
         products: [{
             id: 1,
-
             img: sundae1,
-            alt: 'Brownie',
-            name: 'Brownie',
-            price: 'R$19.99',
-            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
+            alt: 'Sundae 01',
+            name: 'Sundae 01',
+            price: 'R$ 9.99',
+            description: ' Um sorvete é sempre bem-vindo para colorir e refrescar a vida. Um dia sem sorvete é um dia perdido!'
         },
         {
             id: 2,
-
             img: sundae2,
-            alt: 'Milk Shek',
-            name: 'Name 02',
-            price: 'R$19.99',
-            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
+            alt: 'Sundae 02',
+            name: 'Sundae 02',
+            price: 'R$ 9.99',
+            description: ' Um sorvete é sempre bem-vindo para colorir e refrescar a vida. Um dia sem sorvete é um dia perdido!'
         },
         {
             id: 3,
-
             img: sundae3,
-            alt: 'Cherry Bakewell',
-            name: 'Cherry Bakewell',
-            price: 'R$19.99',
-            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
+            alt: 'Sundae 03',
+            name: 'Sundae 03',
+            price: 'R$ 9.99',
+            description: ' Um sorvete é sempre bem-vindo para colorir e refrescar a vida. Um dia sem sorvete é um dia perdido!'
         },
         {
             id: 4,
-
             img: sundae4,
-            alt: 'Raspberry',
-            name: 'Raspberry',
-            price: 'R$19.99',
-            description: 'Um delicioso sorvete cremoso de açaí com floco com um sabor para você viajar.'
+            alt: 'Sundae 04',
+            name: 'Sundae 04',
+            price: 'R$ 9.99',
+            description: ' Um sorvete é sempre bem-vindo para colorir e refrescar a vida. Um dia sem sorvete é um dia perdido!'
         }
         ],
         allProductsUrl: '/',

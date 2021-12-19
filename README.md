@@ -1,4 +1,6 @@
 
+<img alignItems='center' src='https://raw.githubusercontent.com/Diego-1D/menu-icecream/main/src/images/logo.png'/>
+
 ### 💻 Projeto
 O Ice cream é menu no qual são apresentados tipos e sabores de sorvetes!
 

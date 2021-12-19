@@ -27,21 +27,22 @@ const Menu = () => {
     const [categories, setCategories] = useState(allCategories)
     const [selected, setSelected] = useState('Todos');
 
-    const filterItems = (category) => {
-        setSelected(category);
-        if (category === 'Todos') {
+    const filterItems = (c) => {
+        console.log('Categoria',c)
+        setSelected(c);
+        if (c === 'Todos') {
             setMenuItems(items);
             return;
         }
-        const newItems = items.filter((items) => items.category === category);
+        const newItems = items.filter((items) => items.category === c);
         setMenuItems(newItems)
     }
 
     useEffect(() => {
-        let category = query.get('category');
-        if (category != null) {
+        let c = query.get('category');
+        if (c != null) {
 
-            filterItems(category);
+            filterItems(c);
         }
     }, []);
 

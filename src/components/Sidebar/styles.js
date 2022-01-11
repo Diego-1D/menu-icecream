@@ -5,13 +5,14 @@ import { FaTimes } from 'react-icons/fa';
 export const SidebarContainer = styled.aside`
     position: fixed;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: #71CDFF;
     display: grid;
     align-items: center;
     margin-top:-180px;
     transition: 0.3s ease-in-out;
     right: -100%;
+    z-index: 999;
 
     @media screen and (max-width: 800px){
         right: ${({ isOpen }) => (isOpen ? '0' : '-100%')};

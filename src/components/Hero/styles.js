@@ -64,8 +64,8 @@ export const HeroImage = styled.img`
 `;
 
 export const HeroBtn = styled(Link)`
-    font-size: 20px;
-    padding: 1rem 3rem;
+    font-size: 18px;
+    padding: 1rem 2.8rem;
     margin: 3rem 0;
     border: none;
     border-radius: 40px;

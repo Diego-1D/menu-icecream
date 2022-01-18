@@ -38,7 +38,7 @@ export const Photo = styled.img`
     border-radius: 1rem 0 0 1rem;
 
     @media screen and (max-width: 1000px) {
-        height: 200px;
+        height: 210px;
     }
 `;
 

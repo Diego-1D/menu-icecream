@@ -5,13 +5,15 @@ import { TiSocialFacebook, TiSocialInstagram, TiSocialLinkedin, TiSocialGithub }
 export const FooterContainer = styled.div`
     margin-top: 4rem;
     width: 100%;
-    height: 30vh;
+    height: auto;
+    min-height: 15vh;
     display: flex;
     justify-content: space-around;
     background-color: #FF819F;
 
     @media screen and (max-width: 780px){
         flex-direction: column;
+        padding: 30px 0px;
     }
 `;
 
@@ -30,17 +32,17 @@ export const SocialMediaArea = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 780px){
+      padding: 30px;
+    }
 `;
 
 
 export const Title = styled.h3`
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'Oleo Script', cursive;
     color: #072030;
-
-    @media screen and (max-width: 780px){
-        font-size: 1.3rem;
-    }
 `;
 
 export const LinkText = styled(Link)`
@@ -58,26 +60,26 @@ export const SocialMedia = styled.div`
 `;
 
 export const Facebook = styled(TiSocialFacebook)`
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
     color: #072030;
 `;
 
 export const Instagram = styled(TiSocialInstagram)`
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
     color:#072030;
 `;
 
 export const Linkedin = styled(TiSocialLinkedin)`
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
     color:#072030;
 `;
 
 export const Github = styled(TiSocialGithub)`
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
     color:#072030;
 `;
 
